@@ -1,0 +1,17 @@
+.card-header,.card-footer{
+    background-color: #7A2543;
+    color: honeydew;
+    font-family: URW Chancery L, cursive;
+}
+
+.card-header{
+    font-size: larger;
+}
+
+.offcolor{
+    color: #944C3B;
+}
+
+.light_blue{
+    color: #098CAD;
+}
