@@ -1,17 +1,31 @@
 <?php
  $liste = new CategorieBD($cnx);
- $liste->getCategorie();
+ $categories = $liste->getCategorie();
+ if (!is_null ($categories)){
+     $nbr = count($categories);
+ }
+ //var_dump
+
 ?>
 
 <div class="container">
     <div class="card text-center">
         <div class="card-header">
-            Featured
+            Mini Bibliothéque
         </div>
         <div class="card-body">
-            <h5 class="card-title"><i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Mini Bibliothéque </h5>
+            <p class="card-text">
+                <?
+                print "hello world";
+                print  $nbr;
+                for ($i = 0; $i < $nbr; $i++){
+                    print $categories[$i]->nom_categories." ";
+                }
+
+                ?>
+            </p>
+            <a href="#" class="btn btn-primary">Reserver</a>
         </div>
         <div class="card-footer offcolor">
             2 days ago
