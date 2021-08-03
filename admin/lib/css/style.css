@@ -1,0 +1,13 @@
+.lien {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lien:hover {
+    color: red;
+}
+
+#infoLivre{
+    width: 40em;
+}

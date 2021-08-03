@@ -1,6 +1,6 @@
 <?php
 
-class Admin
+class Livre
 {
 
     private $_attributs = array();

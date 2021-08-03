@@ -9,9 +9,21 @@
 }
 
 .offcolor{
-    color: #944C3B;
+    color: palevioletred;
 }
+
 
 .light_blue{
     color: #098CAD;
+}
+
+.button_collection{
+    background-color: lightcoral;
+    color: white;
+}
+
+.card {
+    margin: 0.5em;
+    border : none;
+    text-align: center;
 }
