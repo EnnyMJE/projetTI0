@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8273c33-8fe8-463c-bfa4-72c1e320ccff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxRechercheLivre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxUpdateLivre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/edit_livre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/print_livre.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Membre.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/MembreBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/preAccueil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pre_index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dumps/vues/vue_livres_cat.sql" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dumps/vues/vue_livres_cat.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/LivreBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/LivreBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/gestion_livres.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_livres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +62,7 @@
       <recent name="C:\wamp64\www\ProjetTItest\admin\lib\php" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ProjetTItest\admin\lib\css" />
       <recent name="C:\wamp64\www\ProjetTItest\pages" />
       <recent name="C:\wamp64\www\ProjetTItest\lib\php" />
       <recent name="C:\wamp64\www\ProjetTItest" />
@@ -102,7 +105,7 @@
       <workItem from="1626954593467" duration="15664000" />
       <workItem from="1627304506066" duration="8086000" />
       <workItem from="1627395130628" duration="46080000" />
-      <workItem from="1627893040641" duration="75253000" />
+      <workItem from="1627893040641" duration="110273000" />
     </task>
     <servers />
   </component>

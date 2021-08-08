@@ -8,7 +8,7 @@ $admin = $ad->getAdmin($login,$password);
 //var_dump($admin);
     if ($admin){
         $_SESSION['admin']=1;
-        print 'OK';
+        //print 'OK';
     } else{
         $message ="Identifiants incorrects";
     }

@@ -11,3 +11,12 @@
 #infoLivre{
     width: 40em;
 }
+
+.blue{
+    foncolor: #0000FF !important;
+}
+
+.redbold{
+    color: #FF0000;
+    font-weight: bold;
+}
