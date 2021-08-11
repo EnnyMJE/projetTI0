@@ -32,7 +32,9 @@ $nbr = count($list_livre);
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">voir ce livre en détail</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><?php
+                                        print $list_livre[$i]->livre_status;
+                                        ?></button>
                                     <!--<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
                                 </div>
 

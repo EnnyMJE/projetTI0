@@ -58,7 +58,7 @@ if (!is_null($categories)) {
                         </a>
                         <p>&nbsp</p><i class="bi bi-book light_blue"></i>
                     </h5>
-                    <p class="card-text">-- description de la categorie --</p>
+                    <p class="card-text"><?php print $liste_cat[$i]->detail_cat; ?></p>
                 </div>
             </div>
             <?php

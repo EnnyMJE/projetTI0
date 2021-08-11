@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    $('#efacer').click(function (){
+        alert('efacée');
+
+    });
+
     //blur : perte de focus
     $('#reference').blur(function () {
         var ref = $(this).val();
@@ -69,7 +74,6 @@ $(document).ready(function () {
                 });
             }
         });
-
     });
 
 
@@ -87,7 +91,8 @@ $(document).ready(function () {
             url: './admin/lib/php/ajax/ajaxDetailLivre.php',
             success: function (data) { //data : ce qui est reçu de ajaxDetailLivre
                 //console.data(data);
-                $('#id_livre').html("<br><b>" + data[0].titre_livre + "</b><br>Author : " + data[0].author_livre);
+                $('#id_livre').html("<br><b>" + data[0].titre_livre + "</b><br>Author : " + data[0].author_livre+
+                    "<br>nbr pages :"+ data[0].nbr_page);
                 $('#image_livre').html('<img src="admin/images/' + data[0].photos + '" alt="Illustration">');
             }
         });
@@ -107,12 +112,11 @@ $(document).ready(function () {
             url: './admin/lib/php/ajax/ajaxDetailLivre.php',
             success: function (data) { //data : ce qui est reçu de ajaxDetailLivre
                 //console.data(data);
-                $('#id_livre').html("<br><b>" + data[0].titre_livre + "</b><br>Author : " + data[0].author_livre);
+                $('#id_livre').html("<br><b>" + data[0].titre_livre + "</b><br>Author : " + data[0].author_livre+
+                "<br>nbr pages :"+ data[0].nbr_page);
                 $('#image_livre').html('<img src="admin/images/' + data[0].photos + '" alt="Illustration">');
             }
         });
-
-
     });
 
     //alert("Coucou");
@@ -127,8 +131,8 @@ $(document).ready(function () {
         });
     });
 
-
+    $('#cacher').hide();
     $('#cliquer').click(function () {
-        $('#p2').fadeOut(3000);
+        $('#cacher').fadeIn(3000);
     });
 });

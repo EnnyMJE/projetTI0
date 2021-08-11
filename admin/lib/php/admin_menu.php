@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="http://localhost/ProjetTItest/admin/index_.php?page=accueil.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index_.php?page=accueil.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index_.php?page=gestion_livres.php">Gestion des livre</a>
@@ -17,7 +17,7 @@
                     <a class="nav-link" href="index_.php?page=edit_livre.php">Editer/ajouter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="index_.php?page=efacer_livre.php">Efacer des livre</a>
                 </li>
             </ul>
         </div>

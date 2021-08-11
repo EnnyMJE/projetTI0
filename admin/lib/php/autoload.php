@@ -1,7 +1,7 @@
 <?php
 //page de chargement automatique des classes
 
-//fontion qui charge les fichiers classes
+//fonction qui charge les fichiers classes
 
 function autoload($nom_classe)
 {

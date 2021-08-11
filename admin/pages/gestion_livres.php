@@ -3,7 +3,6 @@ include('./lib/php/verifier_connexion.php');
 $lv = new LivreBD($cnx);
 $liste = $lv->getAllLivre();
 $nbr = count($liste);
-
 ?>
 
 <table class="table">
@@ -19,6 +18,7 @@ $nbr = count($liste);
         <th scope="col">photos</th>
     </tr>
     </thead>
+
     <tbody>
     <?php
     for ($i = 0; $i < $nbr; $i++) {

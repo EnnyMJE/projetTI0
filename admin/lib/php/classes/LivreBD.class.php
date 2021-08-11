@@ -10,14 +10,42 @@ Class LivreBD extends Livre {
         $this->_db = $cnx;
     }
 
-
-    public  function mise_a_jourLivre($id){
-
+    public  function delete_livre($id_livre){
+        try {
+            $query = "delete from collection_livres where id_livre = '".$id_livre."'";
+            $resultset = $this->_db->prepare($query);
+            $resultset->execute();
+        } catch (PDOException $e){
+            print "Echec de la requête : ".$e->getMessage();
+            $_db->rollback();
+        }
     }
 
-    public function ajout_livre(){
-
+    public  function mise_a_jourLivre($id_livre,$titre_livre,$author_livre,$nbr_page,$livre_status){
+        try {
+            $query = "update collection_livres set titre_livre = '".$titre_livre."', author_livre='".$author_livre."', nbr_page='".$nbr_page."',livre_status='".$livre_status."' where id_livre = '".$id_livre."'";
+            $resultset = $this->_db->prepare($query);
+            $resultset->execute();
+        } catch (PDOException $e){
+            print "Echec de la requête : ".$e->getMessage();
+            $_db->rollback();
+        }
     }
+
+    public function ajout_livre($titre_livre, $author_livre, $nbr_page, $livre_status, $reference)
+    {
+        try {
+            $query = "insert into collection_livres (titre_livre, author_livre, nbr_page, livre_status, id_cat, date_publication, reference)  values('".$titre_livre."', '".$author_livre."', '".$nbr_page."','".$livre_status."',1,'01-01-2000','".$reference."')";
+            $resultset = $this->_db->prepare($query);
+            $resultset->execute();
+            print $titre_livre;
+
+        } catch (PDOException $e) {
+            print "Echec de la requête : " . $e->getMessage();
+            $_db->rollback();
+        }
+    }
+
 
     public function getLivreByRef($ref){
         try {
