@@ -11,11 +11,25 @@ if (isset($_POST['logon'])) {
         $_SESSION['membre'] = 1;
         //print 'OK';
         //header('http://localhost/ProjetTItest/index_.php?page=accueil.php');
-        header('../index_.php');
+        header('../index_.php?page=accueil.php');
     } else {
         $message = "Identifiants incorrects !";
     }
 }
+
+if (isset($_POST['enregistre'])) {
+    print'print from isset enregistre';
+extract($_POST, EXTR_OVERWRITE);
+$ml = new MembreBD($cnx);
+$mail = $mb->getMail($ad_mail);
+if ($mail){
+    $_SESSION['mail'] = 1;
+    $message2 = 'Adress mail exist dejà';
+} else {
+    $mail = $mb->creMembre($ad_mail, $mot_pass);
+}
+}
+
 ?>
 
 
@@ -54,7 +68,7 @@ if (isset($_POST['logon'])) {
             </div>
             <div class="col-md-6 login-right">
                 <h2> Register </h2>
-                <form action="registration.php" method="post">
+                <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post">
                     <div class="form-group">
                         <label>Adresse mail</label>
                         <input type="email" class="form-control" id="ad_mail" name="ad_mail" required>

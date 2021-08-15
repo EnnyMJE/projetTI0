@@ -1,10 +1,8 @@
-
 <?php
-$lv=new LivreBD($cnx);
-if(isset($_GET['id_cat_livre'])){
-    $list_livre =$lv->getLivresByCat($_GET['id_cat_livre']);
-}
-else{
+$lv = new LivreBD($cnx);
+if (isset($_GET['id_cat_livre'])) {
+    $list_livre = $lv->getLivresByCat($_GET['id_cat_livre']);
+} else {
     $list_livre = $lv->getAllLivre();
 }
 
@@ -15,6 +13,9 @@ $nbr = count($list_livre);
 
 <div class="album py-5 bg-light">
     <div class="container">
+
+        <a href="http://localhost/ProjetTItest/pages/print_livre.php" class="btn btn-primary button_collection">Liste de
+            toutes de livres en PDF </a><br> <br>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <?php

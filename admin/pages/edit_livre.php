@@ -23,8 +23,7 @@ if (isset($GET['inserer'])){
 
 ?>
 
-
-<form class="row g-3">
+<form class="row g-3" method="get" action="<?php print $_SERVER['PHP_SELF'];?>">
     <!--
     <div class="col-md-12">
         Example à effacer <input type="text" id="recup">

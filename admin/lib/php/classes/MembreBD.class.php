@@ -27,4 +27,33 @@ Class MembreBD extends Membre {
             print "Echec ".$e->getMessage();
         }
     }
+
+    public function getMail($ad_mail){
+        try {
+            $query = "select is_mail(:ad_mail) as retour";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':ad_mail',$ad_mail);
+            $_resultset->execute();
+            $retour = $_resultset->fetchColumn(0);
+
+        }catch (PDOException $e){
+            print "Echec ".$e->getMessage();
+        }
+    }
+
+
+    public function creMembre($ad_mail,$mot_pass){
+        try {
+            $query = "insert into bibli_membres (ad_mail,mot_pass) values(:ad_mail, :mot_pass) ";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':ad_mail',$ad_mail);
+            $_resultset->bindValue(':mot_pass',$mot_pass);
+            $_resultset->execute();
+            $retour = $_resultset->fetchColumn(0);
+
+        }catch (PDOException $e){
+            print "Echec ".$e->getMessage();
+        }
+    }
+
 }

@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8273c33-8fe8-463c-bfa4-72c1e320ccff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/pages/efacer_livre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/lectureSurPlace.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/trouveLivre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dumps/vues/vue_livres_cat.sql" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dumps/vues/vue_livres_cat.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/LivreBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/LivreBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/MembreBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/MembreBD.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/edit_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/edit_livre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/gestion_livres.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_livres.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/collection_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/collection_livre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/emprunter.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/emprunter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/preAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/preAccueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/print_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/print_livre.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,19 +62,6 @@
       <recent name="C:\wamp64\www\ProjetTItest" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -109,7 +86,8 @@
       <workItem from="1626954593467" duration="15664000" />
       <workItem from="1627304506066" duration="8086000" />
       <workItem from="1627395130628" duration="46080000" />
-      <workItem from="1627893040641" duration="159827000" />
+      <workItem from="1627893040641" duration="165704000" />
+      <workItem from="1629044910333" duration="3737000" />
     </task>
     <servers />
   </component>

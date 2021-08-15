@@ -7,7 +7,8 @@ include ('../admin/lib/php/classes/LivreBD.class.php');
 $cnx = Connexion::getInstance($dsn,$user,$password);
 $lv = array();
 $livre = new LivreBD($cnx);
-$liste = $livre->getLivresByCat(1);
+//$liste = $livre->getLivresByCat(1);
+$liste = $livre->getAllLivre();
 $nbr = count($liste);
 
 include ('../admin/lib/php/TCPDF/tcpdf.php');
