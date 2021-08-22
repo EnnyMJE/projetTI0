@@ -14,9 +14,9 @@ $admin = $ad->getAdmin($login,$password);
     }
 }
 
-
+//todo 1 :  comment faire disparu les formulaire quand il est connectée avec JS
 ?>
-<p class=""><?php
+<p class="" id="errorMsg"><?php
     if (isset($message)){
         print $message;
     }
@@ -32,5 +32,5 @@ $admin = $ad->getAdmin($login,$password);
         <input type="password" class="form-control col-md-6" id="password" name="password">
     </div>
 
-    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+    <button type="submit" class="btn btn-primary" id="submit" name="submit">Submit</button>
 </form>

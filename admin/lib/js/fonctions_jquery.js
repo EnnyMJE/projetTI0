@@ -86,7 +86,7 @@ $(document).ready(function () {
         var parametre = "id_livre=" + id;
         $.ajax({
             type: 'GET',
-            data: parametre, //ce qui est envoyé à ajaxProduitDetail
+            data: parametre, //ce qui est envoyé à ajaxLivreDetail
             datatype: 'json',
             url: './admin/lib/php/ajax/ajaxDetailLivre.php',
             success: function (data) { //data : ce qui est reçu de ajaxDetailLivre
@@ -134,5 +134,14 @@ $(document).ready(function () {
     $('#cacher').hide();
     $('#cliquer').click(function () {
         $('#cacher').fadeIn(3000);
+    });
+
+
+    //todo 1 :  comment faire disparu les formulaire quand il est connectée avec JS
+    $('#submit').click(function (){
+       //alert("try the button of submit");
+        if(errorMsg){
+            allert("hello, test error");
+        }
     });
 });
