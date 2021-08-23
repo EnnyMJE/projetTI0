@@ -11,12 +11,12 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index_.php?page=trouveLivre.php">Trouve des Livres</a>
+                    <a class="nav-link" href="index_.php?page=trouveLivre.php">Trouver un Livre</a>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        System de Bibliotheque
+                        Système de Bibliothèque
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="index_.php?page=emprunter.php">Emprunter un livre </a></li>

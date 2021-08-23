@@ -23,12 +23,13 @@ if(isset($_GET['efacer'])){
         <label for="reference" class="form-label">Référence</label>
         <input type="text" class="form-control" id="reference" name="reference">
     </div>
-    <div class="col-md-6">
+    <!--<div class="col-md-6">
         <label for="denomination" class="form-label">Dénomination</label>
         <input type="text" class="form-control" id="denomination" name="titre_livre">
         <br>
-    </div>
-    <div class="col-8">
+    </div>-->
+
+    <div class="col-6">
         <label for="titre_livre" class="form-label">Titre</label>
         <input type="text" class="form-control" id="titre_livre" name="titre_livre">
         <br>
